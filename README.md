@@ -31,15 +31,19 @@ jak jsme přistupovali k návrhu
 
 #### Moduly
 CLOCK_ENABLE:
+Tento modul pochází z počítačových cvičení a umožňuje generovat hodinový signál s upravenou periodou. Používáme dvě instance tohoto modulu, jednu pro řízení aktuálního stavu modulu US_CONTROL (měření, čtení echo, idle) a druhou pro řízení modulu SEG_CONTROL.
 
 US_CONTROL:
+Náš vlastní modul US_CONTROL se stará o komunikaci s ultrazvukovým senzorem HS-SR04. Vysílá pulz trigger a příjimá pulz echo. Násedně změří dobu trvání pulzu echo, ze které vypočítá vzdálenost překážky od senzoru. Dále tuto vzdálenost posílá na další zpracování do modulu SEG_CONTROL. V návrh používáme dvě instance tohoto modulu, pro každý senzor jednu.
 
 SEG_CONTROL:
+Tento modul jsme vytvořili tak, aby dokázal přijmout dva různé signály 10bitové signály obsahuzíjí vzdálenost z instancí modulů US_CONTROL a následně se stará o multiplexování jednolivých digitů 7segmentových displejů na desce Nexys A7 50T. Výstupem tohoto modulu je signál který se stará o samotné přepínání aktivního digitu a druhý signál obsahující binární vyjádření hodnotu kterou chceme zobrazovat na atkivním digitu. 
 
 BIN2SEG:
+Tento modul neupravený verze modulu který jsme používali na počítačových cvičeních. Stará se o to, že vezme binární signál s číselnou hodnotou z modulu SEG_CONTROL a převede ho na signál vhodný pro aktivací jednotlivých segmentů aktivního digitu 7segmentového displeje.  
 
 LED_CONTROL:
-
+Účelem tohoto modulu je ovládání signalizačních RGB LED na desce. Vstupem tohoto modulu je signál s hodnotou vzdálenosti změřenou ultrazvukovým senzorem a porovnávání s námi nastavenou úrovní. Je-li tato úroveň překročena (vzdálenost překáždy je větší než nastavená úrověň), LED svítí zelenou barvou (parkovací místo je volné), pokud je naopak vzdálenost menší (vzdálenost překážky je měnší než nastavená úroveň), svítí LED červenou barvou (parkovací místo je obsazeno). Používáme opět dvě instance tohoto modulu, každou pro jeden senzor.
 
 #### Top level
 ![toplevel](https://github.com/user-attachments/assets/3f0d52c3-7c77-478b-8962-de6d3ec8b30f)
@@ -51,5 +55,9 @@ LED_CONTROL:
 screeny (nebo video?) simulace
 
 ### Praktická ukázka
+
+
+https://github.com/user-attachments/assets/e7a0e2ff-1415-4aaf-9198-d3d24da7efc1
+
 
 ### Závěr
