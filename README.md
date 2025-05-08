@@ -22,6 +22,8 @@ Pro náš projekt jsme použili vývojový FPGA kit Nexys A7 50T, dvojici ultraz
 #### Zapojení
 fotka? namalovat schéma zapojení?
 
+#### Měření
+![scope](https://github.com/user-attachments/assets/62840a5c-8e9b-4ab0-b882-ae49c31bd4ba)
 
 ### Software
 #### Architektura
