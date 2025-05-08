@@ -55,8 +55,6 @@ LED_CONTROL:
 screeny (nebo video?) simulace
 
 ### Praktická ukázka
-
-
 https://github.com/user-attachments/assets/e7a0e2ff-1415-4aaf-9198-d3d24da7efc1
 
 
