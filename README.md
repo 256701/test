@@ -18,6 +18,7 @@ Tento projekt se zabývá návrhem a implementací systému pro měření vzdál
 #### Použitý Hardware
 Pro náš projekt jsme použili vývojový FPGA kit Nexys A7 50T, dvojici ultrazvukových senzorů vzdálenosti HS-SR04 a z důvodů rozdílných úrovní logických signálu vývojové desky a senzorů také obousměrný převodník logické úrovně. Dále jsme použili Arduino UNO, jako zdroj 5V pro senzory.
 ![hw](https://github.com/user-attachments/assets/ea75325f-01d0-4f6b-a881-0d444ac850b0)
+
 #### Zapojení
 fotka? namalovat schéma zapojení?
 
