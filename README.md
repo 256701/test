@@ -1,4 +1,4 @@
-![Blank diagram](https://github.com/user-attachments/assets/58afd189-6431-4dd5-b461-b9d0a8d69177)# Automatizovaný systém chytrého parkovacího domu
+# Automatizovaný systém chytrého parkovacího domu
 ## Závěrečný projekt BPC-DE1
 
 ### Členové týmu
